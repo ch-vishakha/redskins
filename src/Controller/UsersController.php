@@ -20,7 +20,6 @@ class UsersController extends AppController
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
-        $this->loadComponent('BarCode.BarCode');
     }
 
     /**
@@ -67,7 +66,6 @@ class UsersController extends AppController
             $reqData = $this->request->getData();
             $activities = $reqData['user_activities'];
             unset($reqData['user_activities']);
-            $this->loadComponent('BarCode.BarCode');
             // data of activities which user registered for to do
             if(!empty($activities)){
                 foreach ($activities as $activityId) {
