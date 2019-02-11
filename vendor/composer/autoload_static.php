@@ -131,7 +131,6 @@ class ComposerStaticInit77f093ec329b7e15d7c309e430e28c7e
         ),
         'B' => 
         array (
-            'BarCode\\' => 8,
             'Bake\\' => 5,
         ),
         'A' => 
@@ -370,10 +369,6 @@ class ComposerStaticInit77f093ec329b7e15d7c309e430e28c7e
         'CakePHP\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/cakephp-codesniffer/CakePHP',
-        ),
-        'BarCode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cristiandean/bar-code/src',
         ),
         'Bake\\' => 
         array (

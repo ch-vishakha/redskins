@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "40f9673d4c9405d1d4afb2c0f6ec7899",
+    "content-hash": "a8cfab68088d233214757b5fefc492b5",
     "packages": [
         {
             "name": "aura/intl",
@@ -343,36 +343,6 @@
                 "stream_filter_register"
             ],
             "time": "2017-08-18T09:54:01+00:00"
-        },
-        {
-            "name": "cristiandean/bar-code",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cristiandean/bar-code.git",
-                "reference": "ae64c9c6fe98bcf0f0e416e5fb58edae8e20e916"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cristiandean/bar-code/zipball/ae64c9c6fe98bcf0f0e416e5fb58edae8e20e916",
-                "reference": "ae64c9c6fe98bcf0f0e416e5fb58edae8e20e916",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/cakephp": ">=3.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7|^6.0"
-            },
-            "type": "cakephp-plugin",
-            "autoload": {
-                "psr-4": {
-                    "BarCode\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "BarCode plugin for CakePHP",
-            "time": "2017-11-06T15:54:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5024,7 +4994,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cristiandean/bar-code": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

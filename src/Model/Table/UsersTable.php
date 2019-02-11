@@ -160,6 +160,12 @@ class UsersTable extends Table
     }
 
 
+    /**
+      *  Function to transform the email body dynamically
+      *  @param $primaryUser is the main user and the guest user added by the main user
+      *  send the mail to the users who registered to the training camp portal
+    */
+
     private function _transformEmailContent($primaryUser){
 
         if(isset($primaryUser->friends) && !empty($primaryUser->friends)){
@@ -201,11 +207,19 @@ class UsersTable extends Table
         
         $email = new Email('default');
         $email->to($primaryUser->email)
+              ->from('vishakha.sd24@gmail.com')
               ->emailFormat('html')
               ->subject('RedSkins Training Camp Pass')
               ->send($data);
 
     }
+
+    /** 
+     * Function to replace the key with the value dynamically
+     * @param $content is the content or the main body of the email.
+     * @param $hash is the array which consist of values replace the specific keys listed in mail main body.
+     * @return $content by replacing the keys with actual data of the registered primary and secondary users
+    */
 
     private function _substitute($content, $hash){
         $content = str_replace('"', "'", $content);
@@ -219,7 +233,6 @@ class UsersTable extends Table
                 if(strpos($placeholder, 'user_barcode_image')){
 
                     $content = str_replace($placeholder, "<img src=data:image/png;base64,".$value .'style' => 'width:171px; height:166px;'">", $content);
-                    // $content = str_replace($placeholder, , $content);
 
                 }else{
                     $content = str_replace($placeholder, $value, $content);
