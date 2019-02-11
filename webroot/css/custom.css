@@ -1,0 +1,131 @@
+    body {
+        background-size: cover;
+        font-family: calibiri !important;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    h4{
+        font-size: 21px;
+        color: white;
+    }
+    h4:nth-child(2){
+        font-size: 21px;
+        color: white;
+        letter-spacing: 5px;
+    }
+    .logo-image>img{
+        position: fixed;
+        top: 45px;
+    }
+    .inputForm{
+        background: 0 0;
+        border: 0;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        padding: 0;
+        font-size: 15px; 
+    }
+
+    .inputForm:focus{
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+    }
+
+    select.form-control {
+        background: 0 0!important;
+        border: none;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        margin-left: -3px;
+        font-size: 17px;
+        color: white;
+    }
+
+    option {
+        color: black;
+    }
+    select.form-control:focus{
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    .show-activity{
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-left: 29px;
+        display: inline-block;
+        margin-top: 20px;
+        padding-right: 56px; 
+    }
+
+    .checkbox {
+        min-height: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        font-weight: 400;
+        cursor: pointer;
+        display: inline !important;
+    }
+
+     .formButton {
+        background: #550119;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        outline: 0;
+        height: 35px;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        padding: 0px 25px 0px 25px;
+        font-size: 17px;
+        margin-right: 10px;
+        text-transform: uppercase;
+        /* box-shadow: 0px 5px 16px #483f3f; */
+    }
+
+    .basic_info {
+        color: #fff;
+        padding: 0 15px;
+        font-size: 13px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    input::-webkit-input-placeholder {
+        color: white !important;
+    }
+     
+    input:-moz-placeholder { /* Firefox 18- */
+        color: white !important;  
+    }
+     
+    input::-moz-placeholder {  /* Firefox 19+ */
+        color: white !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+     color: white !important;  
+    }
+
+    select::-webkit-select-placeholder {
+        color: white !important;
+    }
+     
+    select:-moz-placeholder { /* Firefox 18- */
+        color: white !important;  
+    }
+     
+    select::-moz-placeholder {  /* Firefox 19+ */
+        color: white !important;  
+    }
+     
+    select:-ms-select-placeholder {  
+     color: white !important;  
+    }
+
