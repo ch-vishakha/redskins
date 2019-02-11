@@ -232,7 +232,7 @@ class UsersTable extends Table
 
                 if(strpos($placeholder, 'user_barcode_image')){
 
-                    $content = str_replace($placeholder, "<img src=data:image/png;base64,".$value .'style' => 'width:171px; height:166px;'">", $content);
+                    $content = str_replace($placeholder, "<img src=data:image/png;base64,".$value." "."style = width:171px; height:166px;".">", $content);
 
                 }else{
                     $content = str_replace($placeholder, $value, $content);
